@@ -2,8 +2,6 @@
 using namespace std;
 
 //RAII stands for Resource Aquisition IS also INITIALIZATION
-//Rajeev Pitre used this trick once 
-
 class Lock
 {
     private:
