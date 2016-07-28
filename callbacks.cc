@@ -18,6 +18,7 @@ int CompareCallBack(T* x, T* y)
         return 0;
 }
 
+template <typename T>
 typedef int (*fptr)(T*, T*);
 
 //Another function to which we pass callback
