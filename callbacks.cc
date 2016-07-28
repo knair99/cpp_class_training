@@ -18,8 +18,7 @@ int CompareCallBack(T* x, T* y)
         return 0;
 }
 
-template <typename T>
-typedef int (*fptr)(T*, T*);
+typedef int (*fptr)(int*, int*);
 
 //Another function to which we pass callback
 template <typename T>
@@ -32,7 +31,7 @@ int main(int argc, char *argv[])
 {
     vector<int> v;
 
-    Sort(v, fptr);
+    Sort(v, CompareCallBack);
     return 0;    
 }
 
